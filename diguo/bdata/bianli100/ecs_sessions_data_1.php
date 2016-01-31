@@ -1,0 +1,27 @@
+<?php
+require("../../inc/header.php");
+
+/*
+		SoftName : EmpireBak Version 2010
+		Author   : wm_chief
+		Copyright: Powered by www.phome.net
+*/
+
+DoSetDbChar('utf8');
+E_D("DROP TABLE IF EXISTS `ecs_sessions_data`;");
+E_C("CREATE TABLE `ecs_sessions_data` (
+  `sesskey` varchar(32) character set utf8 collate utf8_bin NOT NULL default '',
+  `expiry` int(10) unsigned NOT NULL default '0',
+  `data` longtext NOT NULL,
+  PRIMARY KEY  (`sesskey`),
+  KEY `expiry` (`expiry`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8");
+E_D("replace into `ecs_sessions_data` values('aacbe7e91d2bb77ae35d2b98d5e78b62','4294967295','a:7:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;s:9:\"flow_type\";i:0;s:10:\"flow_order\";a:8:{s:14:\"extension_code\";s:0:\"\";s:11:\"shipping_id\";i:3;s:6:\"pay_id\";i:3;s:7:\"pack_id\";i:0;s:7:\"card_id\";i:0;s:5:\"bonus\";i:0;s:8:\"integral\";i:0;s:7:\"surplus\";i:0;}s:15:\"direct_shopping\";i:1;s:14:\"flow_consignee\";a:13:{s:10:\"address_id\";i:0;s:9:\"consignee\";s:4:\"1111\";s:7:\"country\";s:1:\"1\";s:8:\"province\";s:2:\"29\";s:4:\"city\";s:3:\"360\";s:8:\"district\";s:4:\"3065\";s:5:\"email\";s:16:\"369523617@qq.com\";s:7:\"address\";s:71:\"克拉玛依区 克拉玛依区昆仑路51-3号文化创意产业园内\";s:7:\"zipcode\";s:6:\"111111\";s:3:\"tel\";s:11:\"18609901617\";s:6:\"mobile\";s:11:\"18609905225\";s:13:\"sign_building\";s:12:\"是的法师\";s:9:\"best_time\";s:12:\"是发顺丰\";}}');");
+E_D("replace into `ecs_sessions_data` values('8dc3e5b563286cea16064c0a0c6d5e88','4250686147','a:7:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;s:9:\"flow_type\";i:0;s:10:\"flow_order\";a:8:{s:14:\"extension_code\";s:0:\"\";s:11:\"shipping_id\";i:0;s:6:\"pay_id\";i:2;s:7:\"pack_id\";i:0;s:7:\"card_id\";i:0;s:5:\"bonus\";i:0;s:8:\"integral\";i:0;s:7:\"surplus\";i:0;}s:15:\"direct_shopping\";i:1;s:14:\"flow_consignee\";a:13:{s:10:\"address_id\";i:0;s:9:\"consignee\";s:1:\"1\";s:7:\"country\";s:1:\"1\";s:8:\"province\";s:4:\"3526\";s:4:\"city\";s:4:\"3640\";s:8:\"district\";s:4:\"3752\";s:5:\"email\";s:18:\"18609904515@qq.com\";s:7:\"address\";s:3:\"111\";s:7:\"zipcode\";s:21:\"阿斯蒂芬斯蒂芬\";s:3:\"tel\";s:12:\"0990-6912898\";s:6:\"mobile\";s:15:\"阿萨德法师\";s:13:\"sign_building\";s:18:\"暗示法士大夫\";s:9:\"best_time\";s:12:\"阿斯蒂芬\";}}');");
+E_D("replace into `ecs_sessions_data` values('cee10e1086e7d12269007c0b91f20a40','4250740213','a:7:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;s:9:\"flow_type\";i:0;s:10:\"flow_order\";a:8:{s:14:\"extension_code\";s:0:\"\";s:11:\"shipping_id\";i:10;s:6:\"pay_id\";i:0;s:7:\"pack_id\";i:0;s:7:\"card_id\";i:0;s:5:\"bonus\";i:0;s:8:\"integral\";i:0;s:7:\"surplus\";i:0;}s:15:\"direct_shopping\";i:1;s:14:\"flow_consignee\";a:13:{s:10:\"address_id\";i:0;s:9:\"consignee\";s:4:\"1111\";s:7:\"country\";s:1:\"1\";s:8:\"province\";s:4:\"3526\";s:4:\"city\";s:4:\"3640\";s:8:\"district\";s:4:\"3752\";s:5:\"email\";s:15:\"sdfadfsa@qq.com\";s:7:\"address\";s:71:\"克拉玛依区 克拉玛依区昆仑路51-3号文化创意产业园内\";s:7:\"zipcode\";s:6:\"111111\";s:3:\"tel\";s:11:\"18609901617\";s:6:\"mobile\";s:0:\"\";s:13:\"sign_building\";s:12:\"是的法师\";s:9:\"best_time\";s:0:\"\";}}');");
+E_D("replace into `ecs_sessions_data` values('4a8a01a99cb82df5403031c2d8a79281','2833794959','a:7:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;s:10:\"flow_order\";a:1:{s:14:\"extension_code\";s:0:\"\";}s:9:\"flow_type\";i:0;s:15:\"direct_shopping\";i:1;s:14:\"flow_consignee\";a:13:{s:10:\"address_id\";i:0;s:9:\"consignee\";s:1:\"1\";s:7:\"country\";s:1:\"1\";s:8:\"province\";s:4:\"3526\";s:4:\"city\";s:4:\"3640\";s:8:\"district\";s:0:\"\";s:5:\"email\";s:0:\"\";s:7:\"address\";s:3:\"111\";s:7:\"zipcode\";s:0:\"\";s:3:\"tel\";s:11:\"18609904515\";s:6:\"mobile\";s:0:\"\";s:13:\"sign_building\";s:18:\"暗示法士大夫\";s:9:\"best_time\";s:0:\"\";}}');");
+E_D("replace into `ecs_sessions_data` values('238b09b3f8b185c06aa0d02bf13c55f7','4294967295','a:9:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;s:9:\"last_time\";s:10:\"1417117479\";s:7:\"last_ip\";s:13:\"221.13.61.176\";s:12:\"captcha_word\";s:16:\"OGY4YmRiMGVlZA==\";s:9:\"flow_type\";i:0;s:10:\"flow_order\";a:8:{s:14:\"extension_code\";s:0:\"\";s:11:\"shipping_id\";s:2:\"11\";s:6:\"pay_id\";s:1:\"4\";s:7:\"pack_id\";i:0;s:7:\"card_id\";i:4;s:5:\"bonus\";i:0;s:8:\"integral\";i:0;s:7:\"surplus\";i:0;}s:14:\"flow_consignee\";a:15:{s:10:\"address_id\";s:1:\"8\";s:12:\"address_name\";s:0:\"\";s:7:\"user_id\";s:2:\"20\";s:9:\"consignee\";s:4:\"1111\";s:5:\"email\";s:6:\"0@1.cn\";s:7:\"country\";s:1:\"1\";s:8:\"province\";s:4:\"3526\";s:4:\"city\";s:4:\"3636\";s:8:\"district\";s:4:\"3748\";s:7:\"address\";s:4:\"3333\";s:7:\"zipcode\";s:0:\"\";s:3:\"tel\";s:4:\"2222\";s:6:\"mobile\";s:0:\"\";s:13:\"sign_building\";s:0:\"\";s:9:\"best_time\";s:0:\"\";}}');");
+E_D("replace into `ecs_sessions_data` values('9959c1ca43c8117dacf4e71afe9ded9e','2835564768','a:8:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;s:9:\"last_time\";s:10:\"1417751580\";s:7:\"last_ip\";s:14:\"218.84.116.218\";s:12:\"captcha_word\";s:16:\"YzMxYjA3YWQxNg==\";s:14:\"display_search\";s:4:\"grid\";s:9:\"flow_type\";i:0;}');");
+
+require("../../inc/footer.php");
+?>
