@@ -1,0 +1,118 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<div class="index_cate_block f_l">
+
+      <div class="block_head">
+      
+             <a href="{$goods_cat.url}" > <img src="../images/{$goods_cat.id}.gif"> </a>
+ 
+      </div>
+
+      <div class="index_cate_list">
+      
+            <ul>
+            
+                  <!--{foreach from=$cat_goods item=goods}-->
+                  
+                  <li class="goodsItem">
+                  
+                       <div class="block_body" onMouseOver="this.style.backgroundColor='#f1f1f1'" onMouseOut="this.style.backgroundColor='#ffffff'">
+                       
+                             <div class="good_link" >
+                             
+                                    <a href="javascript:void({$goods.id});" onclick="flyToCart(this);addToCart({$goods.id});" id="fd">
+                                    
+                                        <img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="thumb flyobj" >
+                                        
+                                        <div class="addtobasket"></div>
+                                        
+                                    </a>
+
+                             </div>
+
+                             <div>
+                             
+                                   <h4 class="name"><a href="{$goods.url}" target="_blank" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a></h4>
+                                   
+                                   <div class="price">
+                                   
+                                           <font class="shop_s">{$goods.promote_price}</font>
+                                     
+                                   </div>
+
+                             </div>
+
+                       </div>
+
+                  </li>
+
+                  <!--{/foreach}-->
+            </ul>
+
+      </div>
+
+</div>
+
+<div class="col_2 f_l" style=" width:215px">
+
+       <div class="ad_sidebar">
+   
+			 <div class="bd">
+             
+				  <ul class="picList">
+                
+					   <li><?php echo get_adv('cat_1',$GLOBALS['smarty']->_var['goods_cat']['id'])?></li>
+					
+					   <li><?php echo get_adv('cat_2',$GLOBALS['smarty']->_var['goods_cat']['id'])?></li>
+
+				  </ul>
+                  
+			</div>
+            
+            <div class="hd">
+				
+				<ul></ul>
+	
+			</div>
+        	
+       </div>
+       
+       <script type="text/javascript">
+		jQuery(".ad_sidebar").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:1});
+		</script>
+        
+        <div class="home_rank">
+        
+               <h3>本周最受欢迎商品</h3>
+               
+               <ul>
+               
+                   <!--{foreach from=$cat_goods item=goods name=no}-->
+                   
+                   <!-- {if $smarty.foreach.no.iteration<6}-->
+                   
+                   <li>
+                   <span class="price">{$goods.promote_price}</span>
+                          <a href="{$goods.url}" target="_blank" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a>
+                          
+                          
+             
+                   </li>
+                   
+                   <!-- {/if} -->
+                   
+                   <!--{/foreach}-->    
+               
+               </ul>
+        
+        </div>	
+        
+</div>
+
+
+
+
+
+
+
+ 
