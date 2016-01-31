@@ -1,0 +1,13 @@
+
+安装说明：
+1.访问diguo这个目录恢复数据库 帝国管理admin 123456
+
+2.修改data目录下config.php里面的数据库信息
+
+
+3.登陆后台修改自己的信息 后台地址admin 手机版mobile/admin
+
+  帐号admin 密码admin888
+
+http://www.zuimoban.com
+
